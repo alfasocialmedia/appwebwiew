@@ -6,26 +6,29 @@ export async function middleware(request: NextRequest) {
     const url = request.nextUrl; const hostname = request.headers.get('host') || '';
 
     // Define allowed domains (localhost for dev, your production domain for prod)
-    // Adjust this logic based on your actual domain structure
-    const currentHost = process.env.NODE_ENV === 'production'
-        ? 'onradio.com.ar' // Replace with your actual production domain
+    // The admin panel is hosted at panelpro.onradio.com.ar
+    // Radio subdomains are like: radio1.onradio.com.ar
+    const adminHost = process.env.NODE_ENV === 'production'
+        ? 'panelpro.onradio.com.ar' // Admin panel domain
         : 'localhost:3000';
 
-    // Check if we are on a subdomain
-    // Example: radio1.localhost:3000 -> subdomain is "radio1"
-    // Example: localhost:3000 -> subdomain is null
+    const radioBaseDomain = 'onradio.com.ar'; // Base domain for radio subdomains
 
+    // Check if we are on the admin panel domain
+    const isAdminDomain = hostname === adminHost || hostname.includes(adminHost);
+
+    // Check if we are on a radio subdomain
     let subdomain = null;
 
-    if (hostname.includes(currentHost)) {
-        const parts = hostname.replace(`.${currentHost}`, '').split('.');
-        if (parts.length > 0 && parts[0] !== 'www' && parts[0] !== hostname) {
+    if (!isAdminDomain && hostname.includes(radioBaseDomain)) {
+        const parts = hostname.replace(`.${radioBaseDomain}`, '').split('.');
+        if (parts.length > 0 && parts[0] !== 'www' && parts[0] !== hostname && parts[0] !== 'panelpro') {
             subdomain = parts[0];
         }
     }
 
     // Special case for localhost testing with subdomains (e.g. test.localhost:3000)
-    if (process.env.NODE_ENV !== 'production' && hostname.includes('.localhost')) {
+    if (process.env.NODE_ENV !== 'production' && hostname.includes('.localhost') && !hostname.startsWith('localhost')) {
         subdomain = hostname.split('.')[0];
     }
 
