@@ -1,0 +1,38 @@
+{
+  "stationName": "Radio Energy",
+  "slogan": "La mejor música",
+  "streamUrl": "https://emisoras.alfasocialmedia.com.ar/8168/;",
+  "theme": {
+    "primaryColor": "#da2607",
+    "backgroundColor": "#0f0005",
+    "logoUrl": "https://placehold.co/400x400/png",
+    "backgroundImageUrl": "",
+    "backgroundEffect": {
+      "blur": 10,
+      "opacity": 0.5,
+      "movement": true
+    }
+  },
+  "social": [
+    {
+      "platform": "facebook",
+      "url": "https://facebook.com",
+      "active": true
+    },
+    {
+      "platform": "instagram",
+      "url": "https://instagram.com",
+      "active": true
+    },
+    {
+      "platform": "whatsapp",
+      "url": "https://wa.me/1234567890",
+      "active": true
+    }
+  ],
+  "features": {
+    "showArtistInfo": true,
+    "enableChat": false
+  },
+  "footerText": "© 2025 Radio Energy - Todos los derechos reservados"
+}

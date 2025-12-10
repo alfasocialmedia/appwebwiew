@@ -1,0 +1,63 @@
+{
+  "stationName": "Radio Manantial",
+  "slogan": "Misiones, Argentina.",
+  "streamUrl": "https://emisoras.alfasocialmedia.com.ar/8156/stream",
+  "theme": {
+    "primaryColor": "#07a5da",
+    "backgroundColor": "#0a45a3",
+    "logoUrl": "/uploads/1764875422458_radio_image.jpg",
+    "backgroundImageUrl": "/uploads/1764713379586_energy_app_fondo.jpg",
+    "backgroundEffect": {
+      "blur": 10,
+      "opacity": 0.5,
+      "movement": true
+    }
+  },
+  "social": [
+    {
+      "platform": "facebook",
+      "url": "",
+      "active": true
+    },
+    {
+      "platform": "whatsapp",
+      "url": "",
+      "active": true
+    }
+  ],
+  "features": {
+    "showArtistInfo": true,
+    "enableChat": false
+  },
+  "footerText": "© 2025 Radio 10 San Vicente - Todos los derechos reservados",
+  "banners": [
+    {
+      "imageUrl": "",
+      "url": "",
+      "type": "fullscreen",
+      "contentType": "html",
+      "htmlContent": "<img src=\"https://i.ibb.co/mr2HZDKQ/PAGAS-TUS-TASAS-MUNICIPALES-320-x-60-px-1.gif\" alt=\"PAGAS-TUS-TASAS-MUNICIPALES-320-x-60-px-1\" border=\"0\">"
+    }
+  ],
+  "bannerRotationSeconds": 10,
+  "creditsText": "Hecho por OnRadio Argentina",
+  "template": "classic",
+  "splashAuthor": "home studio",
+  "programs": [
+    {
+      "id": "1765126609552",
+      "title": "cvd",
+      "host": "vdvd",
+      "time": "dvdvdv",
+      "days": "Martes,Jueves",
+      "photoUrl": "/uploads/1765127038783_WhatsApp-Image-2023-06-15-at-11.07.52.jpeg",
+      "contact": "vdvdvd"
+    }
+  ],
+  "videos": [
+    {
+      "title": "",
+      "url": ""
+    }
+  ]
+}

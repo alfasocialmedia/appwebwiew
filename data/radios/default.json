@@ -1,0 +1,65 @@
+{
+  "stationName": "Radio 10 San Vicente",
+  "slogan": "Con la gente, siempre!!!",
+  "streamUrl": "https://emisoras.alfasocialmedia.com.ar/8152/stream",
+  "theme": {
+    "primaryColor": "#da2607",
+    "backgroundColor": "#0f0005",
+    "logoUrl": "/uploads/1764714492591_radio_image.jpg",
+    "backgroundImageUrl": "/uploads/1764713379586_energy_app_fondo.jpg",
+    "backgroundEffect": {
+      "blur": 10,
+      "opacity": 0.5,
+      "movement": true
+    }
+  },
+  "social": [
+    {
+      "platform": "facebook",
+      "url": "https://facebook.com",
+      "active": true
+    },
+    {
+      "platform": "instagram",
+      "url": "https://instagram.com",
+      "active": true
+    },
+    {
+      "platform": "whatsapp",
+      "url": "https://wa.me/1234567890",
+      "active": true
+    }
+  ],
+  "features": {
+    "showArtistInfo": true,
+    "enableChat": false
+  },
+  "footerText": "© 2025 Radio 10 San Vicente - Todos los derechos reservados",
+  "banners": [
+    {
+      "imageUrl": "/uploads/1764871870271_GUIRAY_-_51_VIV-REDES-Cover.jpg",
+      "url": "",
+      "type": "fullscreen",
+      "contentType": "image",
+      "htmlContent": "",
+      "frequency": 30
+    },
+    {
+      "imageUrl": "",
+      "url": "",
+      "type": "standard",
+      "contentType": "html",
+      "htmlContent": "<img src=\"https://i.ibb.co/sHwRZmh/TASAS-DE-COMERCIO-MUNI-BLOG.gif\" alt=\"TASAS-DE-COMERCIO-MUNI-BLOG\" border=\"0\">"
+    }
+  ],
+  "bannerRotationSeconds": 10,
+  "programs": [],
+  "creditsText": "Hecho por OnRadio",
+  "videos": [
+    {
+      "title": "Una aventura",
+      "url": "https://youtu.be/M0MfDC_btns?si=NDN-sqDinqzWs-Fo"
+    }
+  ],
+  "template": "classic"
+}

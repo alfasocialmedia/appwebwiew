@@ -1,0 +1,189 @@
+{
+  "stationName": "Radio 10 - San Vicente",
+  "slogan": "La mejor música",
+  "streamUrl": "https://emisoras.alfasocialmedia.com.ar/8152/stream",
+  "theme": {
+    "primaryColor": "#ff2600",
+    "backgroundColor": "#4a1208",
+    "logoUrl": "/uploads/1765067459167_LOGO.png",
+    "backgroundImageUrl": "/uploads/1764713379586_energy_app_fondo.jpg",
+    "backgroundEffect": {
+      "blur": 11,
+      "opacity": 0.5,
+      "movement": true,
+      "gradient": true
+    }
+  },
+  "social": [
+    {
+      "platform": "facebook",
+      "url": "https://facebook.com",
+      "active": true
+    },
+    {
+      "platform": "instagram",
+      "url": "https://instagram.com",
+      "active": true
+    },
+    {
+      "platform": "whatsapp",
+      "url": "https://wa.me/1234567890",
+      "active": true
+    }
+  ],
+  "features": {
+    "showArtistInfo": true,
+    "enableChat": false
+  },
+  "footerText": "© 2025 Radio 10 San Vicente - Todos los derechos reservados",
+  "banners": [
+    {
+      "imageUrl": "",
+      "url": "",
+      "type": "fullscreen",
+      "contentType": "html",
+      "htmlContent": "<img src=\"https://i.ibb.co/mr2HZDKQ/PAGAS-TUS-TASAS-MUNICIPALES-320-x-60-px-1.gif\" alt=\"PAGAS-TUS-TASAS-MUNICIPALES-320-x-60-px-1\" border=\"0\">"
+    }
+  ],
+  "bannerRotationSeconds": 10,
+  "programs": [
+    {
+      "id": "1765063353583",
+      "title": "Basta Chicos",
+      "host": "Juan Lopez",
+      "time": "06:00 a 12:00 horas",
+      "days": "Lunes a Viernes,Lunes,Miércoles,Domingo",
+      "photoUrl": "/uploads/1765063400402_ricardo_for.jpg",
+      "contact": "5493755272509"
+    },
+    {
+      "id": "1765064929115",
+      "title": "Con Jesus",
+      "host": "Marcos Bueno",
+      "time": "07:00 - 09:00",
+      "days": "Lunes a Viernes,Jueves,Viernes",
+      "photoUrl": "/uploads/1765064942548_HHH_0308.JPG",
+      "contact": "5493755272509"
+    },
+    {
+      "id": "1765065014114",
+      "title": "Familia Agrícola",
+      "host": "Escuela EFA",
+      "time": "15:00 a 20:00 horas",
+      "days": "Martes y Viernes,Lunes,Jueves,Domingo",
+      "photoUrl": "/uploads/1765065030767_LOGO_EFA.png",
+      "contact": "5493755272509"
+    }
+  ],
+  "creditsText": "Hecho por OnRadio 🇦🇷",
+  "template": "classic",
+  "videos": [
+    {
+      "title": "EN vIVO",
+      "url": "https://youtu.be/M0MfDC_btns?si=NDN-sqDinqzWs-Fo"
+    },
+    {
+      "title": "CHEF",
+      "url": "https://youtu.be/VCCAhzu5VTo?si=nLlX6UWQPYE0Nk1R"
+    }
+  ],
+  "layout": {
+    "modules": [
+      {
+        "id": "1",
+        "type": "logo",
+        "enabled": true,
+        "order": 0,
+        "settings": {
+          "size": "md",
+          "spacing": "normal",
+          "alignment": "center",
+          "marginTop": 0,
+          "marginBottom": 2
+        }
+      },
+      {
+        "id": "2",
+        "type": "title",
+        "enabled": true,
+        "order": 1,
+        "settings": {
+          "size": "lg",
+          "spacing": "normal",
+          "alignment": "center",
+          "fontSize": "xl",
+          "marginTop": 0,
+          "marginBottom": 1
+        }
+      },
+      {
+        "id": "3",
+        "type": "slogan",
+        "enabled": true,
+        "order": 2,
+        "settings": {
+          "size": "sm",
+          "spacing": "tight",
+          "alignment": "center",
+          "fontSize": "sm",
+          "marginTop": 0,
+          "marginBottom": 3
+        }
+      },
+      {
+        "id": "4",
+        "type": "playButton",
+        "enabled": true,
+        "order": 3,
+        "settings": {
+          "size": "md",
+          "spacing": "normal",
+          "alignment": "center",
+          "marginTop": 0,
+          "marginBottom": 2
+        }
+      },
+      {
+        "id": "5",
+        "type": "volume",
+        "enabled": true,
+        "order": 4,
+        "settings": {
+          "size": "md",
+          "spacing": "tight",
+          "alignment": "center",
+          "marginTop": 0,
+          "marginBottom": 2
+        }
+      },
+      {
+        "id": "6",
+        "type": "socialIcons",
+        "enabled": true,
+        "order": 5,
+        "settings": {
+          "size": "md",
+          "spacing": "normal",
+          "alignment": "center",
+          "marginTop": 0,
+          "marginBottom": 2
+        }
+      },
+      {
+        "id": "7",
+        "type": "footer",
+        "enabled": true,
+        "order": 6,
+        "settings": {
+          "size": "sm",
+          "spacing": "normal",
+          "alignment": "center",
+          "fontSize": "xs",
+          "marginTop": 4,
+          "marginBottom": 0
+        }
+      }
+    ],
+    "globalSpacing": 4
+  }
+}
