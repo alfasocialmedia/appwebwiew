@@ -408,14 +408,16 @@ export default function AdminDashboard() {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="space-y-2">
-                      <Label>Duración mostrada (segundos)</Label>
+                      <Label>Duración mostrada (segundos) - Opcional</Label>
                       <Input
                         type="number"
-                        min="3"
+                        min="0"
                         max="60"
-                        value={config.bannerRotationSeconds || 10}
-                        onChange={(e) => setConfig({ ...config, bannerRotationSeconds: parseInt(e.target.value) || 10 })}
+                        placeholder="Dejar vacío para ocultar banners"
+                        value={config.bannerRotationSeconds || ''}
+                        onChange={(e) => setConfig({ ...config, bannerRotationSeconds: e.target.value ? parseInt(e.target.value) : 0 })}
                       />
+                      <p className="text-xs text-slate-500">Si es 0 o vacío, no se mostrarán banners</p>
                     </div>
 
                     {(!config.banners || config.banners.length === 0) && (

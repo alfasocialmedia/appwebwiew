@@ -184,13 +184,15 @@ export default function PublicPlayer() {
             {config.layout ? (
                 // NEW: Dynamic Module System
                 <div className="relative z-10 flex h-[100dvh] flex-col items-center justify-between p-6 pt-12 text-white overflow-hidden max-w-[480px] mx-auto">
-                    {/* Exit Button */}
-                    <div
-                        className="absolute right-4 top-4 p-2 opacity-80 cursor-pointer hover:opacity-100 hover:bg-white/10 rounded-full transition-all z-50"
-                        onClick={exitApp}
-                    >
-                        <Power className="h-5 w-5 text-white drop-shadow-lg" />
-                    </div>
+                    {/* Exit Button - Hidden in WebView/Mobile App */}
+                    {typeof window !== 'undefined' && !navigator.userAgent.includes('wv') && (
+                        <div
+                            className="absolute right-4 top-4 p-2 opacity-80 cursor-pointer hover:opacity-100 hover:bg-white/10 rounded-full transition-all z-50"
+                            onClick={exitApp}
+                        >
+                            <Power className="h-5 w-5 text-white drop-shadow-lg" />
+                        </div>
+                    )}
 
                     {/* Render Modules Dynamically */}
                     <div className={`flex flex-col items-center justify-center gap-${config.layout.globalSpacing || 4} w-full flex-1`}>
@@ -213,12 +215,14 @@ export default function PublicPlayer() {
             ) : config.template === 'card' ? (
                 // LEGACY: Card Template
                 <div className="relative z-10 flex h-[100dvh] flex-col items-center justify-between p-6 pt-12 text-white overflow-hidden max-w-[480px] mx-auto">
-                    <div
-                        className="absolute right-4 top-4 p-2 opacity-80 cursor-pointer hover:opacity-100 hover:bg-white/10 rounded-full transition-all"
-                        onClick={exitApp}
-                    >
-                        <Power className="h-5 w-5 text-white drop-shadow-lg" />
-                    </div>
+                    {typeof window !== 'undefined' && !navigator.userAgent.includes('wv') && (
+                        <div
+                            className="absolute right-4 top-4 p-2 opacity-80 cursor-pointer hover:opacity-100 hover:bg-white/10 rounded-full transition-all"
+                            onClick={exitApp}
+                        >
+                            <Power className="h-5 w-5 text-white drop-shadow-lg" />
+                        </div>
+                    )}
 
                     <div className="flex flex-col items-center justify-center gap-4 w-full flex-1">
                         <div className="bg-white rounded-3xl p-5 shadow-2xl">
@@ -294,12 +298,14 @@ export default function PublicPlayer() {
             ) : (
                 // LEGACY: Classic Template
                 <div className="relative z-10 flex h-[100dvh] flex-col items-center justify-center gap-6 p-6 pt-12 text-white overflow-hidden max-w-[600px] mx-auto">
-                    <div
-                        className="absolute right-4 md:right-6 top-4 md:top-6 p-3 opacity-70 hover:opacity-100 cursor-pointer hover:bg-white/10 rounded-full transition-all z-20"
-                        onClick={exitApp}
-                    >
-                        <Power className="h-6 w-6 text-white drop-shadow-lg" />
-                    </div>
+                    {typeof window !== 'undefined' && !navigator.userAgent.includes('wv') && (
+                        <div
+                            className="absolute right-4 md:right-6 top-4 md:top-6 p-3 opacity-70 hover:opacity-100 cursor-pointer hover:bg-white/10 rounded-full transition-all z-20"
+                            onClick={exitApp}
+                        >
+                            <Power className="h-6 w-6 text-white drop-shadow-lg" />
+                        </div>
+                    )}
 
                     <div className="flex flex-col items-center justify-center w-full gap-8 md:gap-10">
                         {/* Logo */}
